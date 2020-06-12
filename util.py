@@ -4150,9 +4150,9 @@ def post_relabel(df, threshold=0.8, reduce_value=0.05):
         dendrite_like = False
         axon_like = False
         for j in range(len(lst)):
-            if df_lst[j][4] == 2:
+            if lst[j][4] == 2:
                 axon_like = True
-            elif df_lst[j][4] == 3:
+            elif lst[j][4] == 3:
                 dendrite_like = True
         if axon_like and dendrite_like:
             pass
